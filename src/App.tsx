@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedin, FaFacebookSquare } from 'react-icons/fa'
-import { Header, BackButton, Content } from "./presentation/components"
+import { Header, Content, ContentHeader } from "./presentation/components"
 import ProfilePicture from './assets/profile-picture.jpg'
 
 type InformationBoxProps = {
@@ -10,9 +10,9 @@ type InformationBoxProps = {
 
 const InfomationBox = (props: InformationBoxProps) => {
   return (
-    <div className={`relative ${props.className}`}>
+    <div className={`xl:relative ${props.className}`}>
       <h3 className="text-gray-500 font-mono font-semibold tracking-widest mb-7 text-xs">{props.title}</h3>
-      <div className="flex flex-col gap-3 pl-10 text-slate-300 font-bold text-sm">
+      <div className="flex flex-col gap-3 lg:pl-10 text-slate-300 font-bold text-sm">
         {props.skills.map(skill => (<p>{skill}</p>))}
       </div>
     </div>
@@ -24,15 +24,10 @@ function App() {
   return (
     <div className="bg-zinc-800 min-h-screen">
       <Header />
-      <Content className="">
-        <div className="flex justify-between mb-10">
-          <BackButton />
-          <h1 className="text-zinc-700	text-5xl font-bold pr-20">
-            about
-          </h1>
-        </div>
-        <div className="flex flex-col md:flex-row flex-wrap justify-center items-center md:justify-between sm:gap-4">
-          <div className="pl-5">
+      <Content className="flex flex-col min-h-[calc(80vh_-_32px_-_1.25rem)]">
+        <ContentHeader />
+        <div className="flex-1 flex flex-col md:flex-row flex-wrap justify-center items-center md:items-stretch  md:justify-around sm:gap-4">
+          <div className="flex flex-col justify-center">
             <p className="text-gray-400 text-xs font-mono tracking-widest">WEB DEVELOPER / BACK-END DEVELOPER</p>
             <h1 className="text-amber-400 font-serif text-5xl mt-4">Alexandre</h1>
             <div className="flex gap-3 text-white mt-5">
@@ -48,16 +43,16 @@ function App() {
 
             <div className="rounded-full mt-6 ml-3 w-4 bg-amber-400 h-4 hidden md:block" />
           </div>
-          {/* <div> */}
-            <div className="inline-block shadow-3xl lg:-mt-20">
-              <img src={ProfilePicture} alt="me" className="w-56 clip-profile profile-shadow" />
+          <div className="flex flex-col justify-center">
+            <div className="xl:-mt-20">
+              <img src={ProfilePicture} alt="me" className="w-72 shadow-3xl" />
             </div>
-          {/* </div> */}
+          </div>
           
-          <div className="flex flex-row justify-center mt-10 lg:mt-0 w-full xl:w-fit">
+          <div className="flex flex-row justify-around mt-10 lg:mt-5 w-full overflow-hidden xl:w-fit">
             <InfomationBox className="top-2/3" title="IMPROVING" skills={['Mobile development', 'Artificial Intelligence']} />
             <InfomationBox className="top-1/3" title="SKILLS" skills={['Front-end development', 'Back end development']} />
-            <InfomationBox className="top-0" title="TECNOLOGIES" skills={['ReactJs', 'NodeJs', 'Python', 'MongoDB']} />
+            <InfomationBox className="top-10" title="TECNOLOGIES" skills={['ReactJs', 'NodeJs', 'Python', 'MongoDB']} />
           </div>
         </div>
       </Content>

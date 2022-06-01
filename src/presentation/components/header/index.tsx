@@ -15,7 +15,7 @@ const Header: React.FC = () => {
   return (
     <header className="pt-5 flex justify-between items-center">
       <div className="h-8 w-3 bg-amber-400" />
-      <div className="flex justify-end gap-20 tracking-widest items-baseline text-xs">
+      <div className="flex justify-end gap-10 sm:gap-20 tracking-widest items-baseline text-xs">
         <MenuHeader title="Welcome" />
         <MenuHeader title="Work" />
         <MenuHeader title="About" />
