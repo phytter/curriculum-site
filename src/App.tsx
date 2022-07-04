@@ -1,12 +1,12 @@
 import { Header } from "./presentation/components"
-import { Home } from './presentation/pages'
+import Routes from './main/routes'
 
 function App() {
 
   return (
     <div className="bg-zinc-800 min-h-screen">
       <Header />
-      <Home />
+      <Routes />
     </div>
   )
 }
