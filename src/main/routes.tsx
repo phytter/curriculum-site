@@ -6,9 +6,10 @@ import {
 } from "react-router-dom";
 import { About, Home } from "@/presentation/pages";
 
-const Router = () => {
+const Router = ({ children }: { children: React.ReactNode }) => {
   return (
     <BrowserRouter>
+      { children }
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

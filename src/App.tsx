@@ -5,8 +5,10 @@ function App() {
 
   return (
     <div className="bg-zinc-800 min-h-screen">
-      <Header />
-      <Routes />
+      
+      <Routes>
+        <Header />
+      </Routes>
     </div>
   )
 }
