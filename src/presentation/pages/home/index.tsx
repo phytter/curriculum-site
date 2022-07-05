@@ -56,7 +56,7 @@ const Home: React.FC = () => {
           <a target="_blank" className="z-[2] absolute bottom-[80px] left-[20px]" href="https://github.com/phytter">
             <FaGithub className="text-white text-3xl bg-zinc-900" />
           </a>
-          <a target="_blank" className="z-[2] absolute top-[calc(50%_-_15px)] right-[15px]" href="https://wa.me/556499372303">
+          <a target="_blank" className="z-[2] absolute top-[calc(50%_-_15px)] right-[12px]" href="https://wa.me/556499372303">
             <FaWhatsapp className="text-white text-3xl bg-zinc-900" />
           </a>
           <div className="border-2 border-amber-400 rounded-[50%] w-[250px] h-[250px] absolute top-[30px] z-[0]" />
