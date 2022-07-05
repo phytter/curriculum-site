@@ -26,7 +26,7 @@ const Home: React.FC = () => {
           </span>
           <span className="text-amber-400 text-5xl">{' &'} Back-end Developer.</span>
           <div className="text-gray-400 text-xl mt-3 mb-10">
-            I develop full apps with development patterns and main technologies.
+            I develop modern web apps with development standards and main technologies.
           </div>
         </div>
 
@@ -40,9 +40,10 @@ const Home: React.FC = () => {
           <a target="_blank" className="z-[2] absolute bottom-[100px] left-[45px]" href="https://github.com/phytter">
             <FaGithub className="text-white text-3xl bg-zinc-900" />
           </a>
-          <div className="border-2 border-amber-400 rounded-[50%] w-[350px] h-[350px] absolute top-[30px] z-[0]">
-            <FaWhatsapp className="absolute top-[calc(50%_-_15px)] right-[-15px] text-white text-3xl bg-zinc-900" />
-          </div>
+          <a target="_blank" className="z-[2] absolute top-[calc(50%_-_15px)] right-[18px]" href="https://wa.me/556499372303">
+            <FaWhatsapp className="text-white text-3xl bg-zinc-900" />
+          </a>
+          <div className="border-2 border-amber-400 rounded-[50%] w-[350px] h-[350px] absolute top-[30px] z-[0]" />
           <img src={ProfilePicture} alt="me" className="w-[300px] z-[1] mt-[10px]" />
         </div>
       </div>

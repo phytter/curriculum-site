@@ -4,7 +4,7 @@ import {
   Route,
   Navigate
 } from "react-router-dom";
-import { About, Home } from "@/presentation/pages";
+import { About, Home, Contact } from "@/presentation/pages";
 
 const Router = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -13,6 +13,7 @@ const Router = ({ children }: { children: React.ReactNode }) => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Navigate to="/" replace/>} />
       </Routes>
     </BrowserRouter>
