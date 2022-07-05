@@ -58,7 +58,7 @@ function About() {
         <div className="flex flex-row justify-around mt-10 lg:mt-5 w-full overflow-hidden xl:w-fit">
           <InfomationBox className="top-2/3" title="IMPROVING" skills={['Mobile development', 'Artificial Intelligence']} />
           <InfomationBox className="top-1/3" title="SKILLS" skills={['Front-end development', 'Back-end development']} />
-          <InfomationBox className="top-10" title="TECNOLOGIES" skills={['ReactJs', 'NodeJs', 'Python', 'MongoDB']} />
+          <InfomationBox className="top-10" title="TECHNOLOGIES" skills={['ReactJs', 'NodeJs', 'Python', 'MongoDB']} />
         </div>
       </div>
     </Content>
