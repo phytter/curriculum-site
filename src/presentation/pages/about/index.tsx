@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaWhatsapp, FaCloudDownloadAlt } from 'react-icons/fa'
 import { Content, ContentHeader } from "@/presentation/components"
 import ProfilePicture from '@/assets/profile-picture.jpg'
 
@@ -43,10 +43,15 @@ function About() {
             Since my childhood i love the world of thechnology and because of that i joined the computer science course, where i had my first contact with programming and since then i never stopped. My focus is develop modern and fast web systems.
           </p>
 
-          <a href="#" className="block sm:inline mb-5 sm:mb-0 font-mono mt-5 text-amber-400 text-xs tracking-widest py-1 px-1 border-2 border-amber-500 text-center">
+          {/* <a href="#" className="block sm:inline mb-5 sm:mb-0 font-mono mt-5 text-amber-400 text-xs tracking-widest py-1 px-1 border-2 border-amber-500 text-center">
             VIEW MY CV
-          </a>
-
+          </a> */}
+        <a
+          href="#"
+          className="mb-5 sm:mb-0 border-2 border-amber-500 justify-center text-amber-400 p-1 pl-2 pr-2  rounded-sm font-semibold inline-flex items-center gap-2 hover:opacity-70"
+        >
+            <FaCloudDownloadAlt size={20} /> Download CV
+        </a>
           <div className="rounded-full mt-6 ml-3 w-4 bg-amber-400 h-4 hidden md:block" />
         </div>
         <div className="flex flex-col justify-center">

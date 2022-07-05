@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaWhatsapp, FaCloudDownloadAlt } from 'react-icons/fa'
 import { Content } from "@/presentation/components"
 import ProfilePicture from '@/assets/transparent-profile.png'
 
@@ -16,6 +16,17 @@ const ExperienceInformations = ({ className = '' }) => (
   </div>
 )
 
+const CVButton = ({ className = '' }) => (
+  <div className={className}>
+    <a
+      href="#"
+      className="text-amber-400 p-1 pl-2 pr-2 rounded-sm font-semibold inline-flex items-center gap-2 hover:opacity-70"
+    >
+        <FaCloudDownloadAlt size={20} /> Download CV
+    </a>
+  </div>
+)
+
 const Home: React.FC = () => {
   return (
     <Content className="flex-1 flex justify-between flex-col lg:flex-row mt-10">
@@ -29,6 +40,8 @@ const Home: React.FC = () => {
             I develop modern web apps with development standards and main technologies.
           </div>
         </div>
+
+        <CVButton className="hidden lg:inline-flex" />
 
         <ExperienceInformations className="hidden lg:block" />
       </div>
@@ -63,6 +76,7 @@ const Home: React.FC = () => {
           <img src={ProfilePicture} alt="me" className=" z-[1] mt-[10px]" />
         </div>
       </div>
+      <CVButton className="flex justify-center mt-10 lg:hidden" />
       <ExperienceInformations className="lg:hidden flex justify-center" />
     </Content>
   )
