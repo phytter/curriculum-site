@@ -6,7 +6,7 @@ type Props = {
   
 const Content: React.FC<Props> = ({ children, className = '' }: Props) => {
     return (
-        <section className={`p-14 ${className}`}>{children}</section>
+        <section className={`pt-14 pl-7 pr-7 md:p-14 ${className}`}>{children}</section>
     )
 }
 
