@@ -47,6 +47,22 @@ const Home: React.FC = () => {
           <img src={ProfilePicture} alt="me" className="w-[300px] z-[1] mt-[10px]" />
         </div>
       </div>
+
+      <div className="flex-1 flex justify-center sm:hidden">
+        <div className="w-[300px] h-[300px] bg-zinc-900 rounded-[50%] overflow-hidden inline-flex justify-center relative">
+          <a target="_blank" className="z-[2] absolute top-[15px] left-[calc(50%_-_15px)]" href="https://www.linkedin.com/in/alexandre-da-silva-a08b19146">
+            <FaLinkedin className="text-white text-3xl bg-zinc-900"/>
+          </a>
+          <a target="_blank" className="z-[2] absolute bottom-[80px] left-[20px]" href="https://github.com/phytter">
+            <FaGithub className="text-white text-3xl bg-zinc-900" />
+          </a>
+          <a target="_blank" className="z-[2] absolute top-[calc(50%_-_15px)] right-[15px]" href="https://wa.me/556499372303">
+            <FaWhatsapp className="text-white text-3xl bg-zinc-900" />
+          </a>
+          <div className="border-2 border-amber-400 rounded-[50%] w-[250px] h-[250px] absolute top-[30px] z-[0]" />
+          <img src={ProfilePicture} alt="me" className=" z-[1] mt-[10px]" />
+        </div>
+      </div>
       <ExperienceInformations className="lg:hidden flex justify-center" />
     </Content>
   )
