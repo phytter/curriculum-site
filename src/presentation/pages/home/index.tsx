@@ -1,11 +1,11 @@
-import { FaGithub, FaLinkedin, FaWhatsapp, FaCloudDownloadAlt } from 'react-icons/fa'
-import { Content } from "@/presentation/components"
 import ProfilePicture from '@/assets/transparent-profile.png'
+import { Content } from "@/presentation/components"
+import { FaCloudDownloadAlt, FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 
 const ExperienceInformations = ({ className = '' }) => (
   <div className={className}>
     <span className="p-2 mt-10 inline-flex items-center gap-2 shadow-info">
-      <span className="text-amber-400 font-bold text-4xl">5</span>
+      <span className="text-amber-400 font-bold text-4xl">7</span>
       <span className="text-slate-300 font-bold text-xs">YEARS<br /> EXPERIENCE</span>
     </span>
 
@@ -37,7 +37,7 @@ const Home: React.FC = () => {
           </span>
           <span className="text-amber-400 text-5xl">{' &'} Back-end Developer.</span>
           <div className="text-gray-400 text-xl mt-3 mb-10">
-            I develop modern web apps with development standards and main technologies.
+            Passionate about software design and architecture, I constantly seek to improve user experience and application performance.
           </div>
         </div>
 

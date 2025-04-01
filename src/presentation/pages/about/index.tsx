@@ -1,6 +1,6 @@
-import { FaGithub, FaLinkedin, FaWhatsapp, FaCloudDownloadAlt } from 'react-icons/fa'
-import { Content, ContentHeader } from "@/presentation/components"
 import ProfilePicture from '@/assets/profile-picture.jpg'
+import { Content, ContentHeader } from "@/presentation/components"
+import { FaCloudDownloadAlt, FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 
 type InformationBoxProps = {
   skills: string[],
@@ -40,14 +40,15 @@ function About() {
             </a>
           </div>
           <p className="text-gray-500 text-sm mt-5 w-72 mb-14">
-            Since my childhood i love the world of thechnology and because of that i joined the computer science course, where i had my first contact with programming and since then i never stopped. My focus is develop modern and fast web systems.
+            Since childhood, I have been passionate about technology, which led me to pursue a degree in Computer Science. There, I had my first experience with programming, and I haven't stopped since. My focus is on developing modern, high-performance web systems.
           </p>
 
           {/* <a href="#" className="block sm:inline mb-5 sm:mb-0 font-mono mt-5 text-amber-400 text-xs tracking-widest py-1 px-1 border-2 border-amber-500 text-center">
             VIEW MY CV
           </a> */}
         <a
-          href="#"
+          href="https://drive.google.com/file/d/18QwJ5vNkrAgdjde2NRGFOQ585Dq79dGR/view?usp=drive_link"
+          target="_blank"
           className="mb-5 sm:mb-0 border-2 border-amber-500 justify-center text-amber-400 p-1 pl-2 pr-2  rounded-sm font-semibold inline-flex items-center gap-2 hover:opacity-70"
         >
             <FaCloudDownloadAlt size={20} /> Download CV
@@ -61,9 +62,9 @@ function About() {
         </div>
         
         <div className="flex flex-row justify-around mt-10 lg:mt-5 w-full overflow-hidden xl:w-fit">
-          <InfomationBox className="top-2/3" title="IMPROVING" skills={['Mobile development', 'Artificial Intelligence']} />
-          <InfomationBox className="top-1/3" title="SKILLS" skills={['Front-end development', 'Back-end development']} />
-          <InfomationBox className="top-10" title="TECHNOLOGIES" skills={['ReactJs', 'NodeJs', 'Python', 'MongoDB']} />
+          <InfomationBox className="top-2/3" title="IMPROVING" skills={['Communication', 'Artificial Intelligence']} />
+          <InfomationBox className="top-1/3" title="SKILLS" skills={['Back-end development', 'Front-end development', 'Software Design', 'Cloud Computing']} />
+          <InfomationBox className="top-10" title="TECHNOLOGIES" skills={['NodeJs', 'Python', 'ReactJs', 'MongoDB', 'MySQL', 'AWS', 'Kubernets']} />
         </div>
       </div>
     </Content>
